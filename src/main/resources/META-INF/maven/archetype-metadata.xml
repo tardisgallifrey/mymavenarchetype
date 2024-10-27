@@ -1,0 +1,28 @@
+<archetype-descriptor
+        name="maven-archetype">
+
+    <!--...-->
+    <fileSets>
+        <fileSet>
+            <directory />
+               <includes>
+                   <include>readme.md</include>
+                   <include>license.txt</include>
+               </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+        <directory>src/test/java</directory>
+        <includes>
+            <include>**/*.java</include>
+        </includes>
+        </fileSet>
+    </fileSets>
+
+
+</archetype-descriptor>
